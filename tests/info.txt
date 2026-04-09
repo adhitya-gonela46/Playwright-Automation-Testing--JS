@@ -1,0 +1,281 @@
+PlayWright Task:
+
+PLAYWRIGHT MINI PROJECT ASSIGNMENT (UI + API)
+
+
+1. OBJECTIVE
+
+Build a Playwright automation project that covers core UI and API testing concepts using a simplified folder structure.
+
+Each test must:
+- Focus on one concept
+- Validate real behavior
+- Be clearly named
+- Be independent
+
+
+2. PROJECT STRUCTURE
+
+playwright-mini/
+│
+├── tests/
+│   ├── ui.spec.js
+│   ├── api.spec.js
+│   └── e2e.spec.js
+│
+├── pages/
+│   └── appPages.js
+│
+├── fixtures/
+│   └── testSetup.js
+│
+├── test-data/
+│   └── data.json
+│
+└── README.md
+
+
+3. UI TESTING TASKS (ui.spec.js)
+
+
+Use URLs:
+https://the-internet.herokuapp.com/
+https://www.saucedemo.com/
+https://demo.playwright.dev/todomvc/
+
+
+TEST 1: PAGE LOAD VALIDATION
+
+- Open a page
+- Verify page title
+- Verify main heading is visible
+
+
+TEST 2: LOCATORS VALIDATION
+
+- Locate elements using:
+  - text
+  - role
+  - CSS
+- Validate correct element is selected
+
+
+TEST 3: USER ACTIONS
+
+- Enter text into input field
+- Click button
+- Select dropdown value
+- Toggle checkbox
+- Validate action results
+
+
+TEST 4: ASSERTIONS
+
+- Validate element is visible
+- Validate text content
+- Validate URL change
+- Validate attribute value
+
+
+TEST 5: WAITS AND DYNAMIC CONTENT
+
+- Trigger dynamic loading
+- Wait for element to appear
+- Validate content after load
+
+
+TEST 6: LOGIN FLOW
+
+- Enter valid credentials
+- Submit form
+- Validate successful login
+
+
+TEST 7: NEGATIVE LOGIN
+
+- Enter invalid credentials
+- Submit form
+- Validate error message
+
+
+TEST 8: COMPLEX UI HANDLING
+
+- Handle alert popup
+- Handle iframe interaction
+- Handle new tab/window
+- Validate expected behavior
+
+
+TEST 9: DATA-DRIVEN UI TEST
+
+- Use multiple inputs from test-data
+- Validate form behavior for:
+  - valid data
+  - invalid data
+
+
+TEST 10: NETWORK VALIDATION
+
+- Perform UI action
+- Validate that request is triggered
+- Validate response status
+
+
+4. API TESTING TASKS (api.spec.js)
+
+
+Use APIs:
+https://jsonplaceholder.typicode.com
+https://reqres.in
+https://dummyjson.com
+
+
+TEST 1: GET REQUEST
+
+- Fetch data
+- Validate status code
+- Validate response structure
+
+
+TEST 2: POST REQUEST
+
+- Send request with payload
+- Validate response contains created data
+
+
+
+TEST 3: PUT / PATCH REQUEST
+
+- Update existing resource
+- Validate updated fields
+
+
+TEST 4: DELETE REQUEST
+
+- Delete resource
+- Validate delete response
+
+
+TEST 5: QUERY PARAMS
+
+- Send request with query parameters
+- Validate filtered response
+
+
+TEST 6: RESPONSE VALIDATION
+
+- Validate:
+  - status
+  - headers
+  - JSON structure
+  - data types
+
+
+TEST 7: NEGATIVE API TEST
+
+- Call invalid endpoint
+- Send invalid data
+- Validate error response
+
+
+TEST 8: API CHAINING
+
+- Get list of items
+- Use one ID in another request
+- Validate correct data is returned
+
+
+TEST 9: DATA-DRIVEN API TEST
+
+- Use multiple IDs from test-data
+- Validate responses for each
+
+
+TEST 10: BASIC PERFORMANCE CHECK
+
+- Measure response time
+- Validate it is within acceptable range
+
+
+5. E2E TESTING TASK (e2e.spec.js)
+
+
+
+TEST 1: COMPLETE USER FLOW
+
+- Open application
+- Perform login
+- Perform main user action (e.g., add item / interact with app)
+- Validate final result
+
+
+TEST 2: NEGATIVE END-TO-END FLOW
+
+- Perform invalid flow
+- Validate system handles failure properly
+
+
+6. PAGE OBJECT TASK (pages/appPages.js)
+
+Create reusable methods for:
+- Login actions
+- Common navigation
+- Reusable element interactions
+
+Tests must use these methods instead of direct selectors.
+
+
+7. FIXTURE TASK (fixtures/testSetup.js)
+
+Create reusable setup for:
+- Opening base URL
+- Common preconditions
+- Shared configurations
+
+
+8. TEST DATA TASK (test-data/data.json)
+
+Include:
+- Valid credentials
+- Invalid credentials
+- API IDs
+- Form inputs
+
+Tests must read data from this file.
+
+
+9. VALIDATION REQUIREMENTS
+
+Each test must:
+- Have at least one assertion
+- Validate real behavior
+- Not rely on hard waits
+- Be independent
+
+
+10. MUST COVER CONCEPTS
+
+This assignment must demonstrate:
+- UI automation
+- API automation
+- Assertions
+- Locators
+- User actions
+- Waits
+- Negative testing
+- Data-driven testing
+- API chaining
+- Basic performance checks
+- Reusability (POM + fixtures)
+
+
+11. SUBMISSION REQUIREMENTS
+
+Submit:
+- Complete project folder
+- All test files
+- Page object file
+- Fixture file
+- Test data file
+- README explaining:
+  - what each test validates

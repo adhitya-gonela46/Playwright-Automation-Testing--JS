@@ -1,0 +1,25 @@
+{
+  "validUser": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "invalidUser": {
+    "username": "wrong_user",
+    "password": "wrong_pass"
+  },
+  "apiData": {
+    "userId": 1,
+    "productId": 101
+  },
+  "formInputs": {
+    "firstName": "Venkat",
+    "lastName": "Adhitya",
+    "postalCode": "500072"
+  },
+  "formInputs":{
+    "firstName":"ShivaKumar",
+    "lastName":"Gonela",
+    "postalCode":"500085"
+  }
+  
+}

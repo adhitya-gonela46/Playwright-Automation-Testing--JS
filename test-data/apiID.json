@@ -1,0 +1,12 @@
+{
+  "apiData": {
+    "userId": 1,
+    "postId": 10,
+    "productId": 101
+  },"apiData":{
+    "userId": 2,
+    "postId": 10,
+    "productId": 103
+  }
+
+}
