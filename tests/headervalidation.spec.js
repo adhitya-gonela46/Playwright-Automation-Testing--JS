@@ -4,3 +4,5 @@ test('header metadata validation',async({request})=>{
     const headers=response.headers();
     expect(headers['content-type']).toContain('application/json');
 })
+
+this is the header validation
